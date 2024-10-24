@@ -2,7 +2,7 @@ import { interactions, message } from "https://deno.land/x/discordinteractions/m
 import { serve } from "https://deno.land/std/http/server.ts";
 
 const client = interactions({
-    publicKey: "2023cf46202f03fad1ffbea7967233c4b938e04a5f6af0b9844a1ed13379ae48"
+    publicKey: "cd32e04354ab43a628a3a19a40f712399a1466fe7f9b94417f917d3cb096d65b"
 })
     .slash("hello", (i) => message({ content: `Hello ${i.member?.user.username}!` }))
     .slash("quote", async (_) => {
